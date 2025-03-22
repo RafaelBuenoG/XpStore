@@ -1,0 +1,102 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+body
+{
+    background-color: #1D1A26;
+}
+
+.container-nav
+{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: .5vw 1.2vw;
+    background-color: #01000E;
+
+}
+
+.container-logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo > a > img
+{
+    width: 15vw;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.container-pesquisar
+{
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar
+{
+    width: 40vw;
+    height: 3vw;
+    background-color: #08071E;
+    font-size: 1.2rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 50px;
+    border: 5px solid #21012F;
+}
+
+.icons
+{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    color: white;
+}
+
+.icons > i
+{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.container-conta
+{
+    display: flex;
+    align-items: center;
+}
+
+.conta
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 5vh;
+    max-width: 400px;
+    min-width: 150px;
+    min-height: 40px;
+    gap: .8vw;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.conta > i
+{
+    font-size: 1.8rem;
+}
+
+.conta > span
+{
+    font-size: 1.2rem;
+}
