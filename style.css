@@ -8,12 +8,19 @@
     text-decoration: none;
 }
 
+:root
+{
+
+}
+
 html
 {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
 }
+
+a { color: inherit; }
 
 body
 {
@@ -56,11 +63,11 @@ header
     align-items: center;
 }
 
-.input
+.input-def
 {
     background-color: #08071E;
     color: white;
-    border: 5px solid #21012F;
+    border: 2px solid #21012F;
 }
 
 .pesquisar
@@ -106,7 +113,15 @@ header
     gap: .8vw;
     border-radius: 50px;
     background-color: white;
+    border: 2px solid white;
+    transition: .2s;
     cursor: pointer;
+}
+
+.conta:hover
+{
+    background-color: #01000E;
+    color: white;
 }
 
 .conta > i
@@ -133,12 +148,98 @@ nav > a
     align-items: center;
     width: 100%;
     font-size: 1rem;
+    font-weight: 500;
     color: white;
     border: 1px solid #01000E;
+    transition: .5s;
 }
 
+nav > a:hover
+{
+    font-size: 1.1rem;
+}
 
-#content-1
+.jogos-title
+{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 2vw;
+    font-family: Oswald;
+    color: white;
+}
+
+#content-jogos
+{
+    font-family: Oswald;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4vw;
+    padding: 5vw;
+}
+
+.jogos-card
+{
+    width: 20%;
+    padding: 2vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    background-color: white;
+    transition: .5s;
+    box-shadow: 0px 0px 15px #b7b7b7;
+}
+
+.jogos-card:hover
+{
+    scale: 1.05;
+}
+
+.jogos-card > img
+{
+    width: 15vw;
+    border-radius: 10px;
+}
+
+.jogos-card > h2
+{
+    font-size: 1.2rem;
+}
+
+.jogos-card > span
+{
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.jogos-card > a
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 6vh;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid #21012F;
+    background-color: #21012F;
+    color: white;
+    transition: .5s;
+}
+
+.jogos-card > a:hover
+{
+    background-color: white;
+    color: #21012F;
+}
+
+#content-conta
 {
     width: 100%;
     height: 80vh;
@@ -147,7 +248,7 @@ nav > a
     align-items: center;
 }
 
-#content-1 > .form-conta
+.form-conta
 {
     width: 50vw;
     height: 60vh;
@@ -164,13 +265,13 @@ nav > a
     
 }
 
-#content-1 > .form-conta > span
+.form-conta > span
 {
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-#content-1 > .form-conta > div
+.form-conta > div
 {
     width: 70%;
     display: flex;
@@ -180,7 +281,7 @@ nav > a
     gap: 15%;
 }
 
-#content-1 > .form-conta > div > .input
+.form-conta > div > input
 {
     width: 100%;
     height: 20%;
@@ -189,7 +290,7 @@ nav > a
     border-radius: 50px;
 }
 
-.btn
+.btn-def
 {
     width: 40%;
     height: 10%;
@@ -198,4 +299,36 @@ nav > a
     padding: 10px;
     border-radius: 50px;
     cursor: pointer;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 15vh;
+    background-color: #0B0828;
+    color: white;
+}
+
+footer > p
+{
+    font-weight: 500;
+}
+
+.social-icons
+{
+    font-size: 1.5rem;
+}
+
+.social-icons > a > i
+{
+    transition: .2s;
+}
+
+.social-icons > a > i:hover
+{
+    scale: 1.2;
 }
