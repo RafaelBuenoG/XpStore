@@ -278,7 +278,7 @@ nav > a:hover
     
 }
 
-.form-conta > span
+.form-conta > h2
 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -330,6 +330,69 @@ nav > a:hover
     cursor: pointer;
 }
 
+/* Informations */
+
+#content-informations
+{
+    color: black;
+    font-weight: 400;
+}
+
+#content-informations > section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-informations table
+{
+    width: 70%;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 5vh;
+    border-radius: 20px;
+}
+
+thead
+{
+    font-size: 1.5rem;
+}
+
+tr
+{
+    border: 2px solid black;
+}
+
+td
+{
+    border-right: 2px solid black;
+    padding: 5px;
+}
+
+table a
+{
+    color: blue;
+}
+
+td:nth-child(1)
+{
+    width: 10vw;
+}
+
+td:nth-child(2)
+{
+    width: 40vw;
+}
+
+td:nth-child(3)
+{
+    width: 20vw;
+}
+
 /* About Us */
 
 #content-sobre
@@ -373,11 +436,6 @@ nav > a:hover
     width: 100%;
 }
 
-.container-info ul > li > span
-{
-    font-weight: 800;
-}
-
 .integrantes > h2
 {
     font-size: 1.5rem;
@@ -390,7 +448,7 @@ nav > a:hover
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5vw;
+    gap: 5vw 8vw;
 }
 
 .container-integrantes > div
@@ -410,7 +468,7 @@ nav > a:hover
 }
 .container-integrantes label
 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     color: white;
     margin-top: 1rem;
@@ -443,7 +501,7 @@ nav > a:hover
     color: white;
 }
 
-.form-feedback > span
+.form-feedback > h2
 {
     font-size: 1.5rem;
     font-weight: 500;
