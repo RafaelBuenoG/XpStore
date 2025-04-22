@@ -3,89 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Xp Store</title>
 </head>
-
-<body>
-    <header>
-        <div class="container-header">
-            <div class="container-logo">
-                <a href="index.html"><img src="img/logo.png" alt="Logo Xp Store"></a>
-            </div>
-            <div class="container-pesquisar">
-                <input class="pesquisar input-def" type="text" placeholder="Pesquisar">
-            </div>
-            <div class="container-conta">
-                <a class="conta" href="createAccount.html">
-                    <i class="fa-solid fa-user"></i>
-                    <span>Criar conta</span>
-                </a>
+<body data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg z-1">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="Logo XpStore">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="informations.html">Pesquisa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                </ul>
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control me-2 rounded-5" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-light rounded-5" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">
+                            <i class="fa-solid fa-cart-shopping fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-light rounded-5" href="createAccount.html">
+                            <i class="fa-solid fa-user me-2"></i>
+                            Criar Conta</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="informations.html">Pesquisa</a>
-            <a href="about.html">Sobre</a>
-            <a href="feedback.html">Feedback</a>
-        </nav>
-    </header>
+    </nav>
+    <div class="offcanvas offcanvas-end color-bg" tabindex="-1" id="offcanvasShopCar" aria-labelledby="offcanvasShopCarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasShopCarLabel">Seu carrinho</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-6 my-3">
+                    <section class="card rounded-4">
+                        <img src="img/produtos/FoneHyperX.webp" class="card-img-top rounded-4" alt="Headset HyperX">
+                        <div class="card-body">
+                            <h5 class="card-title">Headset HyperX</h5>
+                            <p class="card-text"><strong>R$499,90</strong></p>
+                            <div class="d-flex gap-2">
+                                <select class="form-select form-select-sm w-50 rounded-4" aria-label="Small select example">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                </select>
+                                <a href="#" class="btn btn-danger rounded-4">Excluir</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-6 my-3">
+                    <section class="card rounded-4">
+                        <img src="img/produtos/TecladoRedDragon.webp" class="card-img-top rounded-4" alt="Teclado Redragon">
+                        <div class="card-body">
+                            <h5 class="card-title">Teclado Redragon</h5>
+                            <p class="card-text"><strong>R$399,90</strong></p>
+                            <div class="d-flex gap-2">
+                                <select class="form-select form-select-sm w-50 rounded-4" aria-label="Small select example">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="3">4</option>
+                                    <option value="3">5</option>
+                                </select>
+                                <a href="#" class="btn btn-danger rounded-4">Excluir</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center color-grey">
+            <div class="align-self-center p-3">
+              <p class="text"><strong>Total: R$899,80</strong></p>
+              <p class="text-center"><a href="#" class="btn btn-lg btn-success rounded-5">Comprar</a></p>
+            </div>
+        </div>
+    </div>
     <h1 class="jogos-title">Todos os produtos</h1>
-    <main id="content-jogos">
-        <section class="jogos-card">
-            <img src="img/produtos/kratos.webp" alt="Action Figure Kratos">
-            <h2>Action Figure Kratos</h2>
-            <span>R$ 299,90</span>
-            <a href="#">Comprar</a>
-        </section>
-        <section class="jogos-card">
-            <img src="img/produtos/FoneHyperX.webp" alt="Headset HyperX">
-            <h2>Headset HyperX</h2>
-            <span>R$ 499,90</span>
-            <a href="#">Comprar</a>
-        </section>
-        <section class="jogos-card">
-            <img src="img/produtos/MouseLog.png" alt="Mouse Logitech">
-            <h2>Mouse Logitech</h2>
-            <span>R$ 670,00</span>
-            <a href="#">Comprar</a>
-        </section>
-        <section class="jogos-card">
-            <img src="img/produtos/TecladoRedDragon.webp" alt="TecladoRedragon">
-            <h2>Teclado Redragon</h2>
-            <span>R$ 399,90</span>
-            <a href="#">Comprar</a>
-        </section>
-        <section class="jogos-card">
-            <img src="img/produtos/Fifa25.jpeg" alt="Jogo Fifa 2025">
-            <h2>Fifa 2025</h2>
-            <span>R$ 359,99</span>
-            <a href="#">Comprar</a>
-        </section>
-        <section class="jogos-card">
-            <img src="img/produtos/MousepadRedDragon.webp" alt="Mousepad Redragon">
-            <h2>Mousepad Redragon</h2>
-            <span>R$ 199,90</span>
-            <a href="#">Comprar</a>
-        </section>
-        <section class="jogos-card">
-            <img src="img/produtos/Batman.webp" alt="Action Figure Batman">
-            <h2>Action Figure Batman</h2>
-            <span>R$ 650,00</span>
-            <a href="#">Comprar</a>
-        </section>
-        <section class="jogos-card">
-            <img src="img/produtos/CallOfDuty.webp" alt="Jogo Call of Duty Cold War">
-            <h2>COD Cold War </h2>
-            <span>R$ 299,90</span>
-            <a href="#">Comprar</a>
-        </section>
-        <a href="#" class="a-btn">Ver Mais</a>
+    <main class="row m-5" id="content-jogos">
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/kratos.webp" class="card-img-top rounded-4" alt="Action Figure Kratos">
+                <div class="card-body">
+                    <h5 class="card-title">Action Figure Kratos</h5>
+                    <p class="card-text"><strong>R$299,90</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/FoneHyperX.webp" class="card-img-top rounded-4" alt="Headset HyperX">
+                <div class="card-body">
+                    <h5 class="card-title">Headset HyperX</h5>
+                    <p class="card-text"><strong>R$499,90</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/MouseLog.png" class="card-img-top rounded-4" alt="Mouse Logitech">
+                <div class="card-body">
+                    <h5 class="card-title">Mouse Logitech</h5>
+                    <p class="card-text"><strong>R$670,00</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/TecladoRedDragon.webp" class="card-img-top rounded-4" alt="Teclado Redragon">
+                <div class="card-body">
+                    <h5 class="card-title">Teclado Redragon</h5>
+                    <p class="card-text"><strong>R$399,90</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/Fifa25.jpeg" class="card-img-top rounded-4" alt="Jogo Fifa 2025">
+                <div class="card-body">
+                    <h5 class="card-title">Fifa 2025</h5>
+                    <p class="card-text"><strong>R$359,99</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/MousepadRedDragon.webp" class="card-img-top rounded-4" alt="Mousepad Redragon">
+                <div class="card-body">
+                    <h5 class="card-title">Mousepad Redragon</h5>
+                    <p class="card-text"><strong>R$199,90</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/Batman.webp" class="card-img-top rounded-4" alt="Action Figure Batman">
+                <div class="card-body">
+                    <h5 class="card-title">Action Figure Batman</h5>
+                    <p class="card-text"><strong>R$650,00</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-6 col-lg-3">
+            <section class="card me-5 mb-5 rounded-4 card-hover">
+                <img src="img/produtos/CallOfDuty.webp" class="card-img-top rounded-4" alt="ogo Call of Duty Cold War">
+                <div class="card-body">
+                    <h5 class="card-title">Call of Duty Cold War</h5>
+                    <p class="card-text"><strong>R$299,90</strong></p>
+                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Xp Games - Todos os direitos reservados</p>
@@ -96,6 +199,7 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 
 </html>

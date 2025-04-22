@@ -10,10 +10,35 @@
 
 :root
 {
-    --color-bg: #1D1A26;
+    --color-bg: #0c0c13;
     --color-purple: #21012F;
     --color-dark-purple: #01000E;
     --color-dark-blue: #0B0828;
+    --color-grey: rgba(255, 255, 255, 0.1);
+}
+
+.color-bg
+{
+    background-color: var(--color-bg)!important;
+}
+
+.color-purple
+{
+    background-color: var(--color-purple);
+}
+.color-dark-purple
+{
+    background-color: var(--color-dark-purple);
+}
+
+.color-dark-blue
+{
+    background-color: var(--color-dark-blue);
+}
+
+.color-grey
+{
+    background-color: var(--color-grey);
 }
 
 html
@@ -21,152 +46,50 @@ html
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
+    height: 100%;
 }
 
 a { color: inherit; }
 
 body
 {
-    position: relative;
-    padding-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-bg);
+    height: 100%;
 }
 
-/* Header */
-
-header
+textarea
 {
-    height: 20vh;
+    resize: none;
 }
 
-.container-header
+main
 {
-    height: 15vh;
-    min-height: 80px;
-    display: flex;
-    justify-content: space-between;
-    padding: .5vw 1.2vw;
-    background-color: var(--color-dark-purple);
-
-}
-
-.container-logo
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-logo > a > img
-{
-    width: 15vw;
-    min-width: 100px;
-    cursor: pointer;
-}
-
-.container-pesquisar
-{
-    display: flex;
-    align-items: center;
-}
-
-.input-def
-{
-    background-color: var(--color-dark-blue);
-    color: white;
-    border: 2px solid var(--color-purple);
-}
-
-.pesquisar
-{
-    width: 40vw;
-    height: 3vw;
-    font-size: 1.2rem;
-    padding: 1rem;
-    border-radius: 50px;
-}
-
-.icons
-{
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-    color: white;
-}
-
-.icons > i
-{
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.container-conta
-{
-    display: flex;
-    align-items: center;
-}
-
-.conta
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 15vw;
-    height: 7vh;
-    font-weight: 500;
-    max-width: 400px;
-    min-width: 100px;
-    gap: .8vw;
-    border-radius: 50px;
-    background-color: white;
-    border: 2px solid white;
-    transition: .2s;
-    cursor: pointer;
-}
-
-.conta:hover
-{
-    background-color: var(--color-dark-purple);
-    color: white;
-}
-
-.conta > i
-{
-    font-size: 1.4rem;
-}
-
-.conta > span
-{
-    font-size: 1rem;
+    flex: 1;
 }
 
 nav
 {
     background-color: var(--color-dark-blue);
-    display: flex;
-    height: 5vh;
 }
 
-nav > a
+nav .logo
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 500;
-    color: white;
-    border: 1px solid var(--color-dark-purple);
-    transition: .2s;
-}
-
-nav > a:hover
-{
-    font-size: 1.1rem;
+    width: 12vw;
 }
 
 /* Home */
+
+.card-hover
+{
+    transition: .3s;
+}
+
+.card-hover:hover
+{
+    scale: 1.02;
+}
 
 .jogos-title
 {
@@ -181,153 +104,24 @@ nav > a:hover
 #content-jogos
 {
     font-family: Oswald;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4vw;
-    padding: 5vw;
-}
-
-.jogos-card
-{
-    width: 20%;
-    padding: 2vw;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    background-color: white;
-    transition: .5s;
-    box-shadow: 0px 0px 15px #b7b7b7;
-}
-
-.jogos-card:hover
-{
-    scale: 1.05;
-}
-
-.jogos-card > img
-{
-    width: 15vw;
-    border-radius: 10px;
-}
-
-.jogos-card > h2
-{
-    font-size: 1.2rem;
-}
-
-.jogos-card > span
-{
-    width: 100%;
-    font-size: 1.4rem;
-    font-weight: 800;
-}
-
-.jogos-card > a
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: 6vh;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    border: 2px solid var(--color-purple);
-    background-color: var(--color-purple);
-    color: white;
-    transition: .5s;
-}
-
-.jogos-card > a:hover
-{
-    background-color: white;
-    color: var(--color-purple);
 }
 
 /* Create Account */
 
-#content-conta
+.caixa-form-container
 {
-    width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.form-conta
+.caixa-form
 {
-    width: 50vw;
-    height: 60vh;
-    max-width: 400px;
-    min-width: 300px;
-    padding: 10px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8%;
-    background-color: rgba(255, 255, 255, .1);
-    color: white;
-    
-}
-
-.form-conta > h2
-{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.form-conta > form
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.form-conta > form > div
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1vw;
-}
-
-.form-conta > form > div > input
-{
-    width: 100%;
-    height: 20%;
-    font-size: 1.2rem;
-    padding: 10px;
-    border-radius: 50px;
-}
-
-.form-conta > form > input
-{
-    margin-top: 10%;
-}
-
-.form-conta > form > div > input:required:valid
-{
-    border: 2px solid green;
-}
-
-.btn-def
-{
-    width: 40%;
-    height: 10%;
-    font-size: 18px;
-    min-width: 100px;
-    padding: 10px;
-    border-radius: 50px;
-    cursor: pointer;
+    width: 25vw;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 /* Informations */
@@ -476,54 +270,14 @@ td:nth-child(3)
 
 /* FeedBack */
 
-#content-feedback
-{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-feedback
-{
-    width: 50vw;
-    height: 60vh;
-    max-width: 400px;
-    min-width: 300px;
-    padding: 20px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, .1);
-    color: white;
-}
-
-.form-feedback > h2
-{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.form-feedback > textarea
-{
-    resize: none;
-    width: 80%;
-    height: 18vh;
-    font-size: 1rem;
-    padding: 10px;
-    border-radius: 20px;
-}
-
 .feedback-icons
 {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 5px;
     color: yellow;
+    margin-bottom: 1vh;
+    margin-top: 2vh;
 }
 
 .feedback-icons > i
@@ -532,75 +286,17 @@ td:nth-child(3)
     cursor: pointer;
 }
 
-.a-btn
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 12vw;
-    height: 7vh;
-    font-size: 1.2rem;
-    font-weight: 500;
-    min-width: 150px;
-    border-radius: 50px;
-    background-color: white;
-    color: black;
-    border: 2px solid white;
-    transition: .2s;
-    cursor: pointer;
-}
-
-/* FeedBack Confirmation */
-
-#content-feedback-confirm
-{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-feedback-confirm
-{
-    width: 50vw;
-    height: 30vh;
-    max-width: 400px;
-    min-width: 300px;
-    padding: 20px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, .1);
-    color: white;
-}
-
-.form-feedback-confirm > h2
-{
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.form-feedback-confirm > p
-{
-    font-weight: 300;
-}
-
 /* Footer */
 
 footer
 {
-    position: absolute;
-    bottom: 0px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1vw;
     gap: 10%;
-    height: 15vh;
     background-color: var(--color-dark-blue);
     color: white;
 }
@@ -627,40 +323,10 @@ footer > p
 
 /* Media Queries */
 
-@media screen and (max-width: 1200px) and (min-width: 700px)
+@media screen and (max-width: 900px)
 {
-    #content-jogos
+    .caixa-form
     {
-        gap: 10vw;
-    }
-
-    .jogos-card
-    {
-        width: 40%;
-        height: 50vh;
-    }
-
-    .jogos-card > img
-    {
-        width: 30vh;
-    }
-}
-
-@media screen and (max-width: 700px)
-{
-    #content-jogos
-    {
-        gap: 10vw;
-    }
-
-    .jogos-card
-    {
-        width: 65%;
-        height: 40vh;
-    }
-
-    .jogos-card > img
-    {
-        width: 22vh;
+        width: 80%;
     }
 }
