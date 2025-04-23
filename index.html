@@ -59,133 +59,96 @@
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div class="row">
-                <div class="col-6 my-3">
-                    <section class="card rounded-4">
-                        <img src="img/produtos/FoneHyperX.webp" class="card-img-top rounded-4" alt="Headset HyperX">
-                        <div class="card-body">
-                            <h5 class="card-title">Headset HyperX</h5>
-                            <p class="card-text"><strong>R$499,90</strong></p>
-                            <div class="d-flex gap-2">
-                                <select class="form-select form-select-sm w-50 rounded-4" aria-label="Small select example">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="3">4</option>
-                                    <option value="3">5</option>
-                                </select>
-                                <a href="#" class="btn btn-danger rounded-4">Excluir</a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="col-6 my-3">
-                    <section class="card rounded-4">
-                        <img src="img/produtos/TecladoRedDragon.webp" class="card-img-top rounded-4" alt="Teclado Redragon">
-                        <div class="card-body">
-                            <h5 class="card-title">Teclado Redragon</h5>
-                            <p class="card-text"><strong>R$399,90</strong></p>
-                            <div class="d-flex gap-2">
-                                <select class="form-select form-select-sm w-50 rounded-4" aria-label="Small select example">
-                                    <option value="1" selected>1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="3">4</option>
-                                    <option value="3">5</option>
-                                </select>
-                                <a href="#" class="btn btn-danger rounded-4">Excluir</a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+            <div class="row" id="carrinho-body">
+                <!-- Cards do carrinho no JS -->
             </div>
         </div>
         <div class="d-flex justify-content-center color-grey">
             <div class="align-self-center p-3">
-              <p class="text"><strong>Total: R$899,80</strong></p>
-              <p class="text-center"><a href="#" class="btn btn-lg btn-success rounded-5">Comprar</a></p>
+              <p class="text" id="valor-total">Total: R$0,00</p>
+              <p class="text-center"><a href="#" class="btn btn-lg btn-success rounded-5">Finalizar Compra</a></p>
             </div>
         </div>
     </div>
     <h1 class="jogos-title">Todos os produtos</h1>
     <main class="row m-5" id="content-jogos">
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/kratos.webp" class="card-img-top rounded-4" alt="Action Figure Kratos">
                 <div class="card-body">
                     <h5 class="card-title">Action Figure Kratos</h5>
-                    <p class="card-text"><strong>R$299,90</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$299,90</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/FoneHyperX.webp" class="card-img-top rounded-4" alt="Headset HyperX">
                 <div class="card-body">
                     <h5 class="card-title">Headset HyperX</h5>
-                    <p class="card-text"><strong>R$499,90</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$499,90</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/MouseLog.png" class="card-img-top rounded-4" alt="Mouse Logitech">
                 <div class="card-body">
                     <h5 class="card-title">Mouse Logitech</h5>
-                    <p class="card-text"><strong>R$670,00</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$670,00</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/TecladoRedDragon.webp" class="card-img-top rounded-4" alt="Teclado Redragon">
                 <div class="card-body">
                     <h5 class="card-title">Teclado Redragon</h5>
-                    <p class="card-text"><strong>R$399,90</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$399,90</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/Fifa25.jpeg" class="card-img-top rounded-4" alt="Jogo Fifa 2025">
                 <div class="card-body">
                     <h5 class="card-title">Fifa 2025</h5>
-                    <p class="card-text"><strong>R$359,99</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$359,99</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/MousepadRedDragon.webp" class="card-img-top rounded-4" alt="Mousepad Redragon">
                 <div class="card-body">
                     <h5 class="card-title">Mousepad Redragon</h5>
-                    <p class="card-text"><strong>R$199,90</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$199,90</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/Batman.webp" class="card-img-top rounded-4" alt="Action Figure Batman">
                 <div class="card-body">
                     <h5 class="card-title">Action Figure Batman</h5>
-                    <p class="card-text"><strong>R$650,00</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$650,00</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
         <div class="col-md-6 col-lg-3">
-            <section class="card me-5 mb-5 rounded-4 card-hover">
+            <section class="card mb-5 rounded-4 card-hover">
                 <img src="img/produtos/CallOfDuty.webp" class="card-img-top rounded-4" alt="ogo Call of Duty Cold War">
                 <div class="card-body">
                     <h5 class="card-title">Call of Duty Cold War</h5>
-                    <p class="card-text"><strong>R$299,90</strong></p>
-                    <a href="#" class="btn btn-dark color-dark-blue">Ver mais</a>
+                    <p class="card-text">R$299,90</p>
+                    <a class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</a>
                 </div>
             </section>
         </div>
@@ -200,6 +163,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
