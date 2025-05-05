@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Xp Store</title>
 </head>
@@ -18,7 +25,9 @@
             <a class="navbar-brand" href="index.html">
                 <img class="logo" src="img/logo.png" alt="Logo XpStore">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,14 +43,16 @@
                     </li>
                 </ul>
                 <form class="d-flex mx-auto" role="search">
-                    <input class="form-control me-2 rounded-5" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <input class="form-control me-2 rounded-5" type="search" placeholder="Pesquisar"
+                        aria-label="Search">
                     <button class="btn btn-outline-light rounded-5" type="submit">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item me-4">
-                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">
+                        <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button"
+                            aria-controls="offcanvasShopCar">
                             <i class="fa-solid fa-cart-shopping fs-3"></i>
                         </a>
                     </li>
@@ -54,10 +65,11 @@
             </div>
         </div>
     </nav>
-    <div class="offcanvas offcanvas-end color-bg" tabindex="-1" id="offcanvasShopCar" aria-labelledby="offcanvasShopCarLabel">
+    <div class="offcanvas offcanvas-end color-bg" tabindex="-1" id="offcanvasShopCar"
+        aria-labelledby="offcanvasShopCarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasShopCarLabel">Seu carrinho</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasShopCarLabel">Seu carrinho</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <div class="row" id="carrinho-body">
@@ -70,61 +82,101 @@
         </div>
         <div class="d-flex justify-content-center color-grey">
             <div class="align-self-center p-3">
-              <p class="text" id="valor-total">Total: R$0,00</p>
-              <p class="text-center"><a href="#" class="btn btn-lg btn-success rounded-5 btn-comprar disabled">Finalizar Compra</a></p>
+                <p class="text" id="valor-total">Total: R$0,00</p>
+                <p class="text-center"><a href="#"
+                        class="btn btn-lg btn-success rounded-5 btn-comprar disabled">Finalizar Compra</a></p>
             </div>
         </div>
     </div>
     <main id="content-informations">
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Informação</th>
-                        <th>Fonte</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Diversidade no mundo gamer</td>
-                        <td>A 11º edição da Pesquisa Game Brasil (PGB) nos mostra dados relevantes sobre o aumento da variedade no perfil dos 
-                            jogadores, como a informação de que o público feminino se tornou dominante nos últimos anos no consumo de jogos 
-                            eletrônicos, representando 50,9% dos jogadores, contra 49,1% do público masculino.
-                            Além disso, no âmbito de classes sociais, a pesquisa também revela que a classe média representa 62,8% dos gamers e 
-                            que há um fenômeno de envelhecimento do público, contrapondo a ideia de que jogos são apenas para adolescentes ao 
-                            expor que cerca de 32% dos gamers estão na faixa de 30 a 40 anos de idade. </td>
-                        <td><a target="_blank" href="https://www.cnnbrasil.com.br/esportes/esports/pesquisa-mapeia-perfil-de-jogadores-brasileiros-e-mostra-aumento-na-diversidade/">https://www.cnnbrasil.com.br/esportes/esports/pesquisa-mapeia-perfil-de-jogadores-brasileiros-e-mostra-aumento-na-diversidade/</a></td>
-                    </tr>
-                    <tr>
-                        <td>O Mercado gamer no Brasil</td>
-                        <td>O setor de desenvolvimento de jogos no Brasil está passando por um período de expansão, contando com 1.042 
-                            estúdios locais que geraram uma receita de US$ 252,6 milhões em 2022, sendo que 93% desses estúdios se dedicam à 
-                            criação de jogos originais. Alguns dos jogos mais significativos da cena brasileira incluem Horizon Chase Turbo, 
-                            Dandara, Chroma Squad e Black Clover: Quartet Knights, obras que alcançaram reconhecimento fora do país e 
-                            ressaltaram a qualidade da produção nacional. A união de uma audiência em crescimento, inovações na elaboração de 
-                            jogos e a exportação para outros mercados posicionam o Brasil de maneira cada vez mais forte no cenário global de 
-                            videogames.</td>
-                        <td><a target="_blank" href="https://www.techtudo.com.br/noticias/2023/11/brasil-e-o-maior-mercado-gamer-da-america-latina-e-top-10-mundial-em-2023-esports.ghtml">https://www.techtudo.com.br/noticias/2023/11/brasil-e-o-maior-mercado-gamer-da-america-latina-e-top-10-mundial-em-2023-esports.ghtml</a></td>
-                    </tr>
-                    <tr>
-                        <td>Impacto da IA nos jogos</td>
-                        <td>A inteligência artificial (IA) tem revolucionado os jogos ao tornar os inimigos e personagens não jogáveis (NPCs) mais 
-                            inteligentes e dinâmicos, criando uma experiência mais imersiva. Ela permite também a geração de mundos procedurais, 
-                            como em "No Man's Sky", oferecendo universos vastos e únicos a cada jogo. No futuro, a IA pode criar narrativas 
-                            personalizadas, onde os NPCs têm comportamentos adaptativos, respondendo às ações do jogador.</td>
-                        <td><a target="_blank" href="https://community.gamerealm.net/blog/noticias-2/o-impacto-da-ia-nos-jogos-presente-e-futuro-4?utm_source=chatg">https://community.gamerealm.net/blog/noticias-2/o-impacto-da-ia-nos-jogos-presente-e-futuro-4?utm_source=chatg</a></td>
-                    </tr>
-                    <tr>
-                        <td>Mercado de jogos em realidade virtual</td>
-                        <td>A realidade virtual (VR) tem se expandido rapidamente no mercado de jogos, com previsões de que o setor atinja US$ 
-                            313,5 bilhões até 2032. As inovações tecnológicas, como headsets autônomos e avanços na conectividade, têm tornado 
-                            a experiência mais acessível e imersiva. Estima-se que a base global de usuários de jogos em RV aumente 
-                            significativamente nos próximos anos, ampliando as possibilidades para desenvolvedores e jogadores.</td>
-                        <td><a target="_blank" href="https://www.aeonvr.com.br/post/mercado-de-jogos-em-realidade-virtual-dever%C3%A1-atingir-uma-avalia%C3%A7%C3%A3o-de-us-313-5-bilh%C3%B5es-at%C3%A9-2032?utm_source=chatgpt.com">https://www.aeonvr.com.br/post/mercado-de-jogos-em-realidade-virtual-dever%C3%A1-atingir-uma-avalia%C3%A7%C3%A3o-de-us-313-5-bilh%C3%B5es-at%C3%A9-2032?utm_source=chatgpt.com</a></td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="container my-6">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-dark text-center">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Informação</th>
+                            <th>Fonte</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diversidade no mundo gamer</td>
+                            <td>
+                                A 11º edição da Pesquisa Game Brasil (PGB) nos mostra dados relevantes sobre o aumento
+                                da variedade no perfil dos
+                                jogadores, como a informação de que o público feminino se tornou dominante nos últimos
+                                anos no consumo de jogos
+                                eletrônicos, representando 50,9% dos jogadores, contra 49,1% do público masculino.
+                                Além disso, no âmbito de classes sociais, a pesquisa também revela que a classe média
+                                representa 62,8% dos gamers e
+                                que há um fenômeno de envelhecimento do público, contrapondo a ideia de que jogos são
+                                apenas para adolescentes ao
+                                expor que cerca de 32% dos gamers estão na faixa de 30 a 40 anos de idade.
+                            </td>
+                            <td>
+
+                                <a target="_blank"
+                                    href="https://www.cnnbrasil.com.br/esportes/esports/pesquisa-mapeia-perfil-de-jogadores-brasileiros-e-mostra-aumento-na-diversidade/">
+                                    CNN Brasil
+                                </a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>O Mercado gamer no Brasil</td>
+                            <td>
+                                O setor de desenvolvimento de jogos no Brasil está passando por um período de expansão,
+                                contando com 1.042
+                                estúdios locais que geraram uma receita de US$ 252,6 milhões em 2022, sendo que 93%
+                                desses estúdios se dedicam à
+                                criação de jogos originais. Alguns dos jogos mais significativos da cena brasileira
+                                incluem Horizon Chase Turbo,
+                                Dandara, Chroma Squad e Black Clover: Quartet Knights.
+                            </td>
+                            <td>
+
+                                <a target="_blank"
+                                    href="https://www.techtudo.com.br/noticias/2023/11/brasil-e-o-maior-mercado-gamer-da-america-latina-e-top-10-mundial-em-2023-esports.ghtml">
+                                    TechTudo
+                                </a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Impacto da IA nos jogos</td>
+                            <td>
+                                A inteligência artificial (IA) tem revolucionado os jogos ao tornar os inimigos e
+                                personagens não jogáveis (NPCs) mais
+                                inteligentes e dinâmicos, criando uma experiência mais imersiva. No futuro, a IA pode
+                                criar narrativas personalizadas,
+                                onde os NPCs têm comportamentos adaptativos.
+                            </td>
+                            <td>
+                                <a target="_blank"
+                                    href="https://community.gamerealm.net/blog/noticias-2/o-impacto-da-ia-nos-jogos-presente-e-futuro-4?utm_source=chatg">
+                                    GameRealm
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mercado de jogos em realidade virtual</td>
+                            <td>
+                                A realidade virtual (VR) tem se expandido rapidamente no mercado de jogos, com previsões
+                                de que o setor atinja US$
+                                313,5 bilhões até 2032. As inovações tecnológicas tornam a experiência mais acessível e
+                                imersiva.
+                            </td>
+                            <td>
+                                <a target="_blank"
+                                    href="https://www.aeonvr.com.br/post/mercado-de-jogos-em-realidade-virtual-dever%C3%A1-atingir-uma-avalia%C3%A7%C3%A3o-de-us-313-5-bilh%C3%B5es-at%C3%A9-2032?utm_source=chatgpt.com">
+                                    AeonVR
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <footer>
@@ -136,7 +188,9 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
