@@ -290,16 +290,25 @@ footer>p {
 
 .carousel-wrapper {
     position: relative;
+    margin-bottom: 3rem;
 }
+
 .carousel-container {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0 2rem;
     scroll-behavior: smooth;
     position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
 .product-card {
     flex: 0 0 auto;
     width: 250px;
@@ -307,18 +316,21 @@ footer>p {
     border-radius: 8px;
     scroll-snap-align: start;
     padding: 1rem;
-    background-color:  #ffffff1a;
+    background-color: #ffffff1a;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
 .product-card img {
     width: 100%;
     height: auto;
     border-radius: 4px;
 }
+
 .product-title {
     font-size: 1rem;
     margin: 0.5rem 0;
 }
+
 .price {
     color: #e53935;
     font-weight: bold;
@@ -336,9 +348,11 @@ footer>p {
     z-index: 5;
     padding: 0;
 }
+
 .carousel-arrow.left {
     left: 10px;
 }
+
 .carousel-arrow.right {
     right: 10px;
 }
@@ -348,6 +362,7 @@ footer>p {
         left: 20px;
         font-size: 2.2rem;
     }
+
     .carousel-arrow.right {
         right: 20px;
         font-size: 2.2rem;
@@ -359,6 +374,7 @@ footer>p {
         left: 30px;
         font-size: 2.5rem;
     }
+
     .carousel-arrow.right {
         right: 30px;
         font-size: 2.5rem;
@@ -370,6 +386,7 @@ footer>p {
         left: 40px;
         font-size: 2.8rem;
     }
+
     .carousel-arrow.right {
         right: 40px;
         font-size: 2.8rem;
@@ -381,6 +398,7 @@ footer>p {
         left: 50px;
         font-size: 3rem;
     }
+
     .carousel-arrow.right {
         right: 50px;
         font-size: 3rem;
