@@ -82,7 +82,8 @@ nav .logo {
 .jogos-title {
     text-transform: uppercase;
     font-size: 2.2rem;
-    text-align: center;
+    text-align: left;
+    padding-left: 3vw;
     margin-top: 2vw;
     font-family: Oswald;
     color: white;
@@ -404,3 +405,62 @@ footer>p {
         font-size: 3rem;
     }
 }
+
+
+/* seleção de categorias */
+
+.categorias {
+  text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: left;
+    padding-left: 3vw;
+    margin-top: 2vw;
+    font-family: Oswald;
+    color: white;
+}
+
+.categoria-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 35px;
+  padding-top: 35px;
+  padding-left: 35px;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.icone {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .categoria {
+    width: 60px;
+  }
+
+  .icone {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.title-categoria{
+    
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1vw;
+    font-family: Oswald;
+    color: white;
+}
+
