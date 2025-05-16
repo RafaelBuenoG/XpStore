@@ -436,11 +436,12 @@ footer>p {
 }
 
 .icone {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   background-color: #ccc;
   border-radius: 50%;
   margin-bottom: 8px;
+ 
 }
 
 /* Responsivo */
@@ -464,3 +465,9 @@ footer>p {
     color: white;
 }
 
+#imagem-acessórios {
+    background-image: url('img/acessórios/Capa Cateogria acessórios.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
