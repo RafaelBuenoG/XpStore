@@ -298,7 +298,7 @@ footer>p {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0 2rem;
     scroll-behavior: smooth;
     position: relative;
@@ -313,7 +313,7 @@ footer>p {
 .product-card {
     flex: 0 0 auto;
     width: 250px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 8px;
     scroll-snap-align: start;
     padding: 1rem;
@@ -324,7 +324,7 @@ footer>p {
 .product-card img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .product-title {
@@ -333,7 +333,7 @@ footer>p {
 }
 
 .price {
-    color: #e53935;
+    color: #cccccc;
     font-weight: bold;
 }
 
@@ -356,6 +356,12 @@ footer>p {
 
 .carousel-arrow.right {
     right: 10px;
+}
+
+.price {
+    height: 5rem;
+    padding-top: 1rem;
+
 }
 
 @media (min-width: 480px) {
