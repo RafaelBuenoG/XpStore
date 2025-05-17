@@ -12,7 +12,7 @@
     --color-purple: #21012F;
     --color-dark-purple: #01000E;
     --color-dark-blue: #0B0828;
-    --color-grey: #ffffff1a;
+    --color-grey: #25252b;
 }
 
 .color-bg {
@@ -61,12 +61,24 @@ main {
     flex: 1;
 }
 
-nav {
+nav .logo {
+    width: 20vw;
+}
+
+.nav-top {
+    background-color: var(--color-bg);
+}
+
+
+.nav-bottom
+{
+    font-size: .8rem;
     background-color: var(--color-dark-blue);
 }
 
-nav .logo {
-    width: 12vw;
+.nav-bottom i
+{
+    font-size: 1.5rem;
 }
 
 /* Home */
@@ -314,9 +326,11 @@ footer>p {
     flex: 0 0 auto;
     width: 250px;
     border: 1px solid #cccccc;
+    width: 100px;
+    height: 200px;
+    border: 1px solid #ccc;
     border-radius: 8px;
     scroll-snap-align: start;
-    padding: 1rem;
     background-color: #ffffff1a;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -325,9 +339,10 @@ footer>p {
     width: 100%;
     height: auto;
     border-radius: 2px;
+    border-radius: none;
 }
 
-.product-title {
+.card-title {
     font-size: 1rem;
     margin: 0.5rem 0;
 }
@@ -338,24 +353,27 @@ footer>p {
 }
 
 .carousel-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background: none;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
     border: none;
-    font-size: 2rem;
+    font-size: 3rem;
     cursor: pointer;
-    color: #fff;
-    z-index: 5;
-    padding: 0;
+    color: black;
 }
 
 .carousel-arrow.left {
-    left: 10px;
+    left: 3rem;
 }
 
 .carousel-arrow.right {
-    right: 10px;
+    right: 3rem;
 }
 
 .price {
@@ -365,6 +383,63 @@ footer>p {
 }
 
 @media (min-width: 480px) {
+.carousel-arrow
+{
+    font-size: 1.5rem;
+}
+
+.container-nav
+{
+    display: none!important;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .carousel-arrow
+    {
+        display: none;
+    }
+
+    .card-title
+    {
+        font-size: .8rem;
+    }
+    
+    .card-text
+    {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    nav .logo {
+        width: 10vw;
+    }
+
+    .nav-bottom
+    {
+        display: none;
+    }
+
+    .container-nav
+    {
+        display: flex!important;
+    }
+
+    .search
+    {
+        width: 25vw;
+    }
+
+    .product-card
+    {
+        width: 180px;
+        height: auto;
+    }
+}
+
+/* @media (min-width: 480px) {
     .carousel-arrow.left {
         left: 20px;
         font-size: 2.2rem;
@@ -410,7 +485,7 @@ footer>p {
         right: 50px;
         font-size: 3rem;
     }
-}
+} */
 
 
 /* seleção de categorias */
