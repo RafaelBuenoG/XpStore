@@ -324,11 +324,14 @@ footer>p {
 
 .product-card {
     flex: 0 0 auto;
+<<<<<<< Updated upstream
     width: 250px;
     border: 1px solid #cccccc;
+=======
     width: 100px;
     height: 200px;
     border: 1px solid #ccc;
+>>>>>>> Stashed changes
     border-radius: 8px;
     scroll-snap-align: start;
     background-color: #ffffff1a;
@@ -338,18 +341,24 @@ footer>p {
 .product-card img {
     width: 100%;
     height: auto;
+<<<<<<< Updated upstream
     border-radius: 2px;
+=======
     border-radius: none;
+>>>>>>> Stashed changes
 }
 
 .card-title {
     font-size: 1rem;
+<<<<<<< Updated upstream
     margin: 0.5rem 0;
 }
 
 .price {
     color: #cccccc;
     font-weight: bold;
+=======
+>>>>>>> Stashed changes
 }
 
 .carousel-arrow {
@@ -376,6 +385,7 @@ footer>p {
     right: 3rem;
 }
 
+<<<<<<< Updated upstream
 .price {
     height: 5rem;
     padding-top: 1rem;
@@ -383,6 +393,7 @@ footer>p {
 }
 
 @media (min-width: 480px) {
+=======
 .carousel-arrow
 {
     font-size: 1.5rem;
@@ -440,6 +451,7 @@ footer>p {
 }
 
 /* @media (min-width: 480px) {
+>>>>>>> Stashed changes
     .carousel-arrow.left {
         left: 20px;
         font-size: 2.2rem;
