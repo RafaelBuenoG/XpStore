@@ -62,13 +62,18 @@ main {
 }
 
 nav .logo {
-    width: 20vw;
+    width: 22vw;
 }
 
 .nav-top {
     background-color: var(--color-bg);
 }
 
+
+.search
+{
+    width: 200px;
+}
 
 .nav-bottom
 {
@@ -293,7 +298,7 @@ footer>p {
 
 /* Media Queries */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .caixa-form {
         width: 80%;
     }
@@ -310,8 +315,7 @@ footer>p {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     display: flex;
-    gap: 2rem;
-    padding: 0 2rem;
+    gap: 1rem;
     scroll-behavior: smooth;
     position: relative;
     scrollbar-width: none;
@@ -326,10 +330,9 @@ footer>p {
     flex: 0 0 auto;
     width: 250px;
     border: 1px solid #cccccc;
-    width: 100px;
-    height: 200px;
+    width: 130px;
+    height: 220px;
     border: 1px solid #ccc;
-    border-radius: 8px;
     scroll-snap-align: start;
     background-color: #ffffff1a;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -338,34 +341,27 @@ footer>p {
 .product-card img {
     width: 100%;
     height: auto;
-    border-radius: 2px;
-    border-radius: none;
 }
 
-.card-title {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-}
-
-.price {
-    color: #cccccc;
+.card-text {
+    color: #ffffff;
     font-weight: bold;
 }
 
 .carousel-arrow {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 50%;
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
-    border: none;
-    font-size: 3rem;
+    border: 1px solid white;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: black;
+    color: white;
 }
 
 .carousel-arrow.left {
@@ -376,137 +372,33 @@ footer>p {
     right: 3rem;
 }
 
-.price {
-    height: 5rem;
-    padding-top: 1rem;
-
-}
-
-@media (min-width: 480px) {
-.carousel-arrow
-{
-    font-size: 1.5rem;
-}
-
 .container-nav
 {
     display: none!important;
 }
 
-@media screen and (max-width: 1000px)
+.card-title
 {
-    .carousel-arrow
-    {
-        display: none;
-    }
-
-    .card-title
-    {
-        font-size: .8rem;
-    }
-    
-    .card-text
-    {
-        font-size: .8rem;
-    }
+    font-size: .7rem;
 }
 
-@media screen and (min-width: 1000px)
+.card-text
 {
-    nav .logo {
-        width: 10vw;
-    }
-
-    .nav-bottom
-    {
-        display: none;
-    }
-
-    .container-nav
-    {
-        display: flex!important;
-    }
-
-    .search
-    {
-        width: 25vw;
-    }
-
-    .product-card
-    {
-        width: 180px;
-        height: auto;
-    }
+    font-size: .7rem;
 }
-
-/* @media (min-width: 480px) {
-    .carousel-arrow.left {
-        left: 20px;
-        font-size: 2.2rem;
-    }
-
-    .carousel-arrow.right {
-        right: 20px;
-        font-size: 2.2rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .carousel-arrow.left {
-        left: 30px;
-        font-size: 2.5rem;
-    }
-
-    .carousel-arrow.right {
-        right: 30px;
-        font-size: 2.5rem;
-    }
-}
-
-@media (min-width: 1024px) {
-    .carousel-arrow.left {
-        left: 40px;
-        font-size: 2.8rem;
-    }
-
-    .carousel-arrow.right {
-        right: 40px;
-        font-size: 2.8rem;
-    }
-}
-
-@media (min-width: 1440px) {
-    .carousel-arrow.left {
-        left: 50px;
-        font-size: 3rem;
-    }
-
-    .carousel-arrow.right {
-        right: 50px;
-        font-size: 3rem;
-    }
-} */
-
 
 /* seleção de categorias */
 
-.categorias {
-  text-transform: uppercase;
-    font-size: 2.2rem;
-    text-align: left;
-    padding-left: 3vw;
-    margin-top: 2vw;
+.title-section
+{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     font-family: Oswald;
-    color: white;
 }
 
 .categoria-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  gap: 35px;
-  padding-top: 35px;
-  padding-left: 35px;
+    display: flex;
+    gap: 1rem;
 }
 
 .categoria {
@@ -576,4 +468,58 @@ footer>p {
 .breadcrumb-text-active{
     color: #FFA500;
     
+}
+
+@media screen and (min-width: 1000px)
+{
+    nav .logo {
+        width: 10vw;
+    }
+
+    .nav-bottom
+    {
+        display: none;
+    }
+
+    .container-nav
+    {
+        display: flex!important;
+    }
+
+    .search
+    {
+        width: 25vw;
+    }
+
+    .product-card
+    {
+        width: 180px;
+        height: auto;
+    }
+
+    .card-title
+    {
+        font-size: 1rem;
+    }
+    
+    .card-text
+    {
+        font-size: 1rem;
+    }
+
+    .carousel-arrow
+    {
+        display: flex;
+    }
+
+    .categoria-container
+    {
+        gap: 3rem;
+    }
+
+    .title-section
+    {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
 }
