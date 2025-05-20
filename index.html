@@ -28,65 +28,69 @@
                 <img class="logo" src="img/logo.png" alt="Logo XpStore">
             </a>
             <form class="d-flex mx-auto" role="search">
-                    <input class="form-control me-2 rounded-5 search" type="search" placeholder="O que você procura?"
-                        aria-label="Search">
-                    <button class="btn btn-outline-light rounded-5" type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                <input class="form-control me-2 rounded-5 search" type="search" placeholder="O que você procura?"
+                    aria-label="Search">
+                <button class="btn btn-outline-light rounded-5" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
             <div class="d-flex gap-5 container-nav">
                 <div class="d-flex gap-4">
-                    <a href="#" class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
+                    <a href="#"
+                        class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
                         <i class="fa-solid fa-chart-simple"></i>
                         <span>Meu XP</span>
                     </a>
                     <a class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none"
-                            data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">
+                        data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button"
+                        aria-controls="offcanvasShopCar">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Carrinho</span>
                     </a>
-                    <a href="#" class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
+                    <a href="#"
+                        class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
                         <i class="fa-solid fa-bars"></i>
                         <span>Menu</span>
                     </a>
                 </div>
-                <a class="btn btn-light rounded-5 d-flex justify-content-center align-items-center" href="createAccount.html">
-                            <i class="fa-solid fa-user me-2"></i>
-                            Criar Conta</a>
+                <a class="btn btn-light rounded-5 d-flex justify-content-center align-items-center"
+                    href="createAccount.html">
+                    <i class="fa-solid fa-user me-2"></i>
+                    Criar Conta</a>
             </div>
         </div>
     </nav>
 
-<!-- Carousel Automatico -->
-<section class="slider">
-    <div class="slider-content">
-        <input type="radio" name="btn-radio" id="radio1">
-        <input type="radio" name="btn-radio" id="radio2">
-        <input type="radio" name="btn-radio" id="radio3">
-        <div class="slide-box primeiro">
-            <img class="img-desktop" src="./img/carousel/1 PROMO.png" alt="">
-            <img class="img-mobile" src="./img/carousel/1 PROMO MOB.png" alt="">
+    <!-- Carousel Automatico -->
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="./img/carousel/1 PROMO.png" alt="">
+                <img class="img-mobile" src="./img/carousel/1 PROMO MOB.png" alt="">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="./img/carousel/2 PROMO.png" alt="">
+                <img class="img-mobile" src="./img/carousel/2 PROMO MOB.png" alt="">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="./img/carousel/3 PROMO.png" alt="">
+                <img class="img-mobile" src="./img/carousel/3 PROMO MOB.png" alt="">
+            </div>
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
         </div>
-        <div class="slide-box">
-            <img class="img-desktop" src="./img/carousel/2 PROMO.png" alt="">
-            <img class="img-mobile" src="./img/carousel/2 PROMO MOB.png" alt="">
-        </div>
-        <div class="slide-box">
-            <img class="img-desktop" src="./img/carousel/3 PROMO.png" alt="">
-            <img class="img-mobile" src="./img/carousel/3 PROMO MOB.png" alt="">
-        </div>
-        <div class="nav-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-        </div>
-        <div class="nav-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <div class="offcanvas offcanvas-end color-bg" tabindex="-1" id="offcanvasShopCar"
@@ -113,7 +117,7 @@
         </div>
     </div>
     <!-- seleção de categorias -->
-     <div class="carousel-wrapper">
+    <div class="carousel-wrapper">
         <button class="carousel-arrow left z-2"><i class="bi bi-chevron-left"></i></button>
         <button class="carousel-arrow right z-2"><i class="bi bi-chevron-right"></i></button>
         <div class="container">
@@ -185,11 +189,11 @@
                         <p class="title-categoria">Acessórios</p>
                     </a>
             </section>
-        </div>    
+        </div>
     </div>
-<!-- <btn class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas"
+    <!-- <btn class="btn btn-dark color-dark-blue btn-add-carrinho" data-bs-toggle="offcanvas"
     href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">Add Carrinho</btn> -->
-<!-- fim de catedorias -->
+    <!-- fim de catedorias -->
     <div class="carousel-wrapper">
         <button class="carousel-arrow left z-2"><i class="bi bi-chevron-left"></i></button>
         <button class="carousel-arrow right z-2"><i class="bi bi-chevron-right"></i></button>
@@ -204,63 +208,71 @@
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/PlayStation 5 com 2 jogos.webp" class="card-img-top rounded-4" alt="PlayStation 5">
+                    <img src="img/carousel/PlayStation 5 com 2 jogos.webp" class="card-img-top rounded-4"
+                        alt="PlayStation 5">
                     <div class="card-body">
                         <h5 class="card-title">PlayStation 5 com 2 jogos</h5>
                         <p class="card-text">R$ 3.812,07</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Headset Redragon Zeus Lite.webp" class="card-img-top rounded-4" alt="Headset Redragon Zeus Lite">
+                    <img src="img/carousel/Headset Redragon Zeus Lite.webp" class="card-img-top rounded-4"
+                        alt="Headset Redragon Zeus Lite">
                     <div class="card-body">
                         <h5 class="card-title">Headset Redragon Zeus Lite</h5>
                         <p class="card-text">R$ 169,99</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Robô Aspirador Smart 700.webp" class="card-img-top rounded-4" alt="Robô Aspirador Smart 700">
+                    <img src="img/carousel/Robô Aspirador Smart 700.webp" class="card-img-top rounded-4"
+                        alt="Robô Aspirador Smart 700">
                     <div class="card-body">
                         <h5 class="card-title">Robô Aspirador Smart 700</h5>
                         <p class="card-text">R$ 899,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
             </section>
-        </div>    
+        </div>
     </div>
 
     <div class="carousel-wrapper">
@@ -277,56 +289,64 @@
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/PlayStation 5 com 2 jogos.webp" class="card-img-top rounded-4" alt="PlayStation 5">
+                    <img src="img/carousel/PlayStation 5 com 2 jogos.webp" class="card-img-top rounded-4"
+                        alt="PlayStation 5">
                     <div class="card-body">
                         <h5 class="card-title">PlayStation 5 com 2 jogos</h5>
                         <p class="card-text">R$ 3.812,07</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Headset Redragon Zeus Lite.webp" class="card-img-top rounded-4" alt="PlayStation 5">
+                    <img src="img/carousel/Headset Redragon Zeus Lite.webp" class="card-img-top rounded-4"
+                        alt="PlayStation 5">
                     <div class="card-body">
                         <h5 class="card-title">Headset Redragon Zeus Lite</h5>
                         <p class="card-text">R$ 169,99</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Robô Aspirador Smart 700.webp" class="card-img-top rounded-4" alt="Robô Aspirador Smart 700">
+                    <img src="img/carousel/Robô Aspirador Smart 700.webp" class="card-img-top rounded-4"
+                        alt="Robô Aspirador Smart 700">
                     <div class="card-body">
                         <h5 class="card-title">Robô Aspirador Smart 700</h5>
                         <p class="card-text">R$ 899,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
                     </div>
                 </a>
                 <a href="#" class="card rounded-4 product-card text-decoration-none">
-                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4" alt="Placa de Vídeo RTX 5070">
+                    <img src="img/carousel/Placa de Vídeo RTX 5070.webp" class="card-img-top rounded-4"
+                        alt="Placa de Vídeo RTX 5070">
                     <div class="card-body">
                         <h5 class="card-title">Placa de Vídeo RTX 5070</h5>
                         <p class="card-text">R$ 6.999,90</p>
@@ -427,6 +447,113 @@
             </section>
         </div>
     </main> -->
+
+
+    <!--Conteudo principal-->
+    <!-- Título da página -->
+    <div class="container-fluid bg-dark text-center pt-4">
+        <h1 class="fw-bold text-white display-5">Dúvidas Frequentes</h1>
+    </div>
+
+    <!-- Seção principal -->
+    <main class="bg-dark text-white py-5">
+        <div class="container">
+
+            <!-- Accordion FAQ -->
+            <div class="accordion" id="accordionExemplo">
+
+                <!-- Item 1: Entrega -->
+                <div class="accordion-item bg-dark border-0 border-bottom border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed shadow-none bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#duvida1">
+                            <i class="bi bi-box-seam-fill me-3"></i> Como funciona a entrega?
+                        </button>
+                    </h2>
+                    <div id="duvida1" class="accordion-collapse collapse">
+                        <div class="accordion-body fw-bold">
+                            O prazo depende da sua localização e do tipo de frete escolhido (econômico ou expresso).
+                            Para capitais, a entrega pode ocorrer em até 3 dias úteis. Utilizamos transportadoras
+                            confiáveis e Correios. Jogos digitais são enviados por e-mail em até 1 hora após a
+                            confirmação do pagamento.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Garantia -->
+                <div class="accordion-item bg-dark border-0 border-bottom border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed shadow-none bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#duvida2">
+                            <i class="bi bi-clock-fill me-3"></i> Os produtos têm garantia?
+                        </button>
+                    </h2>
+                    <div id="duvida2" class="accordion-collapse collapse">
+                        <div class="accordion-body fw-bold">
+                            Sim. Todos os acessórios e periféricos contam com garantia mínima de 3 meses. Produtos com
+                            garantia estendida terão essa informação destacada na página.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Suporte técnico -->
+                <div class="accordion-item bg-dark border-0 border-bottom border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed shadow-none bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#duvida3">
+                            <i class="bi bi-tools me-3"></i> Vocês têm suporte técnico?
+                        </button>
+                    </h2>
+                    <div id="duvida3" class="accordion-collapse collapse">
+                        <div class="accordion-body fw-bold">
+                            Oferecemos suporte básico por e-mail e chat. Para problemas técnicos com jogos ou
+                            dispositivos, encaminhamos para o suporte oficial da marca.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Produto original -->
+                <div class="accordion-item bg-dark border-0 border-bottom border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed shadow-none bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#duvida4">
+                            <i class="bi bi-check2-all me-3"></i> Os produtos são originais?
+                        </button>
+                    </h2>
+                    <div id="duvida4" class="accordion-collapse collapse">
+                        <div class="accordion-body fw-bold">
+                            Sim, todos os nossos produtos são 100% originais, com nota fiscal e garantia do fabricante.
+                            Trabalhamos com as principais marcas do mercado gamer, como Logitech, Razer, Corsair, HyperX
+                            e Redragon.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Pagamento -->
+                <div class="accordion-item bg-dark border-0 border-bottom border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed shadow-none bg-transparent text-white" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#duvida5">
+                            <i class="bi bi-credit-card-fill me-3"></i> Quais formas de pagamento vocês aceitam?
+                        </button>
+                    </h2>
+                    <div id="duvida5" class="accordion-collapse collapse">
+                        <div class="accordion-body fw-bold">
+                            Aceitamos cartão de crédito (Visa, MasterCard, Elo, Amex), boleto bancário, Pix e carteiras
+                            digitais como Mercado Pago e PayPal. O pagamento via Pix é aprovado na hora. Parcelamentos
+                            podem ser feitos em até 12x no cartão com ou sem juros, dependendo da promoção vigente.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Fim do Accordion -->
+
+        </div>
+    </main>
+
+
+
     <footer>
         <p>&copy; 2025 Xp Games - Todos os direitos reservados</p>
         <div class="social-icons">
@@ -439,20 +566,23 @@
 
     <nav class="navbar sticky-bottom nav-bottom px-4 border-top border-light z-5">
         <div class="container">
-            <a href="index.html" class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
+            <a href="index.html"
+                class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
             </a>
-            <a href="#" class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
+            <a href="#"
+                class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
                 <i class="fa-solid fa-chart-simple"></i>
                 <span>Meu XP</span>
             </a>
             <a class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none"
-                    data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">
+                data-bs-toggle="offcanvas" href="#offcanvasShopCar" role="button" aria-controls="offcanvasShopCar">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>Carrinho</span>
             </a>
-            <a href="#" class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
+            <a href="#"
+                class="d-flex flex-column text-center justify-content-center align-items-center text-decoration-none">
                 <i class="fa-solid fa-bars"></i>
                 <span>Menu</span>
             </a>
@@ -460,8 +590,8 @@
     </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <script src="js/carousel.js"></script>
     <script src="js/cart.js"></script>
 </body>
