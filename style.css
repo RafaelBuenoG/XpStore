@@ -443,6 +443,11 @@ footer>p {
   background-position: center;
 
 }
+#imagem-action-figure {
+    background-image: url('img/actionFIgureJogos/estatua_artorias_the_abysswalker_dark_souls.webp');
+  background-size: cover;
+  background-position: center;
+}
 /* Breadcrumb */
 
 .breadcrumb-item{
