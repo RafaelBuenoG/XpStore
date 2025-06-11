@@ -7,8 +7,7 @@
     text-decoration: none;
 }
 
-ul
-{
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -76,20 +75,34 @@ nav .logo {
 }
 
 
-.search
-{
+.search {
     width: 200px;
 }
 
-.nav-bottom
-{
+.nav-bottom {
     font-size: .8rem;
     background-color: var(--color-dark-blue);
 }
 
-.nav-bottom i
-{
+.nav-bottom i {
     font-size: 1.5rem;
+}
+
+/* Media para responsividade em telas maiores */
+
+@media (min-width: 1440px) {
+    .navbar {
+        padding: 20px 80px;
+        font-size: 1.2rem;
+    }
+
+    .navbar a {
+        margin: 0 27px;
+    }
+
+    .container {
+        max-width: 1600px;
+    }
 }
 
 /* Home */
@@ -378,25 +391,21 @@ footer>p {
     right: 3rem;
 }
 
-.container-nav
-{
-    display: none!important;
+.container-nav {
+    display: none !important;
 }
 
-.card-title
-{
+.card-title {
     font-size: .7rem;
 }
 
-.card-text
-{
+.card-text {
     font-size: .7rem;
 }
 
 /* seleção de categorias */
 
-.title-section
-{
+.title-section {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-family: Oswald;
@@ -408,35 +417,35 @@ footer>p {
 }
 
 .categoria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
 }
 
 .icone {
-  width: 100px;
-  height: 100px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin-bottom: 8px;
- 
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 8px;
+
 }
 
 /* Responsivo */
 @media (max-width: 600px) {
-  .categoria {
-    width: 60px;
-  }
+    .categoria {
+        width: 60px;
+    }
 
-  .icone {
-    width: 50px;
-    height: 50px;
-  }
+    .icone {
+        width: 50px;
+        height: 50px;
+    }
 }
 
-.title-categoria{
-    
+.title-categoria {
+
     font-size: 1rem;
     text-align: center;
     margin-top: 1vw;
@@ -446,18 +455,20 @@ footer>p {
 
 #imagem-acessórios {
     background-image: url('img/acessórios/Capa Cateogria acessórios.jpg');
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
 
 }
+
 #imagem-action-figure {
     background-image: url('img/actionFIgureJogos/estatua_artorias_the_abysswalker_dark_souls.webp');
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
 }
+
 /* Breadcrumb */
 
-.breadcrumb-item{
+.breadcrumb-item {
     text-transform: uppercase;
     font-size: 2.2rem;
     text-align: left;
@@ -466,60 +477,56 @@ footer>p {
     font-family: Oswald;
     color: white;
 }
-.breadcrumb-text{
+
+.breadcrumb-text {
     color: white;
     font-size: 1.2rem;
     flex-wrap: wrap;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
-.breadcrumb-link{
-    text-decoration: none; 
+.breadcrumb-link {
+    text-decoration: none;
 }
-.breadcrumb-text-active{
+
+.breadcrumb-text-active {
     color: #FFA500;
-    
+
 }
 
 /* Página de produto */
 
-.product-details
-{
+.product-details {
     padding: 1rem 0 0 0;
 }
 
-.product-details > h1
-{
+.product-details>h1 {
     word-break: break-word;
     height: auto;
     font-size: 1.5rem;
 }
 
-.product-img > img
-{
+.product-img>img {
     width: 100vw;
     height: 50vh;
     object-fit: cover;
 }
 
-.price-product
-{
+.price-product {
     display: flex;
 }
 
-.price-product :nth-child(2)
-{
+.price-product :nth-child(2) {
     font-size: 2.5rem;
     font-weight: 600;
 }
 
-.price-product :first-child, .price-product :last-child
-{
+.price-product :first-child,
+.price-product :last-child {
     margin-top: .8rem;
 }
 
-.buy-container
-{
+.buy-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
@@ -527,13 +534,11 @@ footer>p {
     gap: 10% 2%;
 }
 
-.buy-container *
-{
+.buy-container * {
     border-radius: 1rem;
 }
 
-.buy-container :nth-child(1):not(i)
-{
+.buy-container :nth-child(1):not(i) {
     width: 100%;
     font-weight: 600;
     text-align: center;
@@ -543,8 +548,7 @@ footer>p {
     background-color: #6B6B6B;
 }
 
-.buy-container :nth-child(2)
-{
+.buy-container :nth-child(2) {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -557,22 +561,19 @@ footer>p {
     transition: .2s;
 }
 
-.buy-container :nth-child(2) > i
-{
+.buy-container :nth-child(2)>i {
     width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buy-container :nth-child(2):hover
-{
+.buy-container :nth-child(2):hover {
     background-color: #535353;
     scale: 1.02;
 }
 
-.buy-container :nth-child(3)
-{
+.buy-container :nth-child(3) {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -585,84 +586,69 @@ footer>p {
     transition: .2s;
 }
 
-.buy-container :nth-child(3):hover
-{
+.buy-container :nth-child(3):hover {
     background-color: #0fb66e;
     scale: 1.02;
 }
 
-.buy-container :nth-child(3) > i
-{
+.buy-container :nth-child(3)>i {
     width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.product-description > h2
-{
+.product-description>h2 {
     font-weight: 600;
 }
 
-.review-sec
-{
+.review-sec {
     margin: 2rem 0;
 }
 
-.review-icons
-{
+.review-icons {
     color: yellow;
 }
 
-@media screen and (min-width: 1000px)
-{
+@media screen and (min-width: 1000px) {
     nav .logo {
         width: 10vw;
     }
 
-    .nav-bottom
-    {
+    .nav-bottom {
         display: none;
     }
 
-    .container-nav
-    {
-        display: flex!important;
+    .container-nav {
+        display: flex !important;
     }
 
-    .search
-    {
+    .search {
         width: 25vw;
     }
 
-    .product-card
-    {
+    .product-card {
         width: 180px;
         height: auto;
     }
 
-    .card-title
-    {
-        font-size: 1rem;
-    }
-    
-    .card-text
-    {
+    .card-title {
         font-size: 1rem;
     }
 
-    .carousel-arrow
-    {
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .carousel-arrow {
         display: flex;
     }
 
-    .categoria-container
-    {
+    .categoria-container {
         gap: 3rem;
     }
 
-    .title-section
-    {
+    .title-section {
         font-size: 2rem;
         margin-bottom: 1.5rem;
     }
@@ -672,9 +658,9 @@ footer>p {
     .main-product-page {
         display: grid;
         grid-template-areas:
-        "img     buy"
-        "img     desc"
-        "review  review";
+            "img     buy"
+            "img     desc"
+            "review  review";
         grid-template-columns: 1fr 1fr;
     }
 
@@ -686,7 +672,7 @@ footer>p {
         grid-area: buy;
     }
 
-     .product-description {
+    .product-description {
         grid-area: desc;
     }
 
@@ -694,17 +680,16 @@ footer>p {
         grid-area: review;
     }
 
-    .stars, .product-details > h1
-    {
+    .stars,
+    .product-details>h1 {
         margin: 0 3rem;
     }
 
-    .product-details > h1
-    {
+    .product-details>h1 {
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .product-img {
         display: flex;
         justify-content: center;
@@ -721,39 +706,37 @@ footer>p {
         margin: 0 auto;
     }
 
-    .product-buy-sec
-    {
+    .product-buy-sec {
         margin-top: 80px;
     }
 
-    .price-product :nth-child(2)
-    {
+    .price-product :nth-child(2) {
         font-size: 3.5rem;
         font-weight: 600;
     }
 
-    .price-product :first-child, .price-product :last-child
-    {
+    .price-product :first-child,
+    .price-product :last-child {
         font-size: 1.5rem;
         margin-top: .8rem;
     }
 
-    .product-img, .product-buy-sec, .product-description, .product-reviews
-    {
+    .product-img,
+    .product-buy-sec,
+    .product-description,
+    .product-reviews {
         width: 90%;
         padding: 2rem;
         background-color: var(--color-grey);
         border-radius: 1rem;
     }
 
-    .product-description
-    {
+    .product-description {
         overflow-y: scroll;
         height: 330px;
     }
 
-    .product-reviews
-    {
+    .product-reviews {
         width: 75%;
         margin-bottom: 30px;
     }
@@ -762,80 +745,103 @@ footer>p {
 
 /* Carousel automatico e manual */
 
-section.slider{
+section.slider {
     margin: 0 auto;
     width: 100%;
     height: auto;
     padding: 0 !important;
     overflow: hidden;
 }
-.slider-content{
+
+.slider-content {
     width: 400%;
     height: auto;
     display: flex;
 }
-.slider-content input, .img-mobile{
+
+.slider-content input,
+.img-mobile {
     display: none;
 }
-.slide-box{
+
+.slide-box {
     width: 25%;
     height: auto;
     position: relative;
     text-align: center;
     transition: 1s;
 }
-.slide-box img{
+
+.slide-box img {
     width: 100%;
 }
-.nav-manual, .nav-auto{
+
+.nav-manual,
+.nav-auto {
     position: absolute;
     width: 100%;
     margin-top: 34.3%;
     display: flex;
     justify-content: center;
 }
-.nav-manual .manual-btn, .nav-auto div{
+
+.nav-manual .manual-btn,
+.nav-auto div {
     border: 1px solid white;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.2s;
-} 
-.nav-manual{
+}
+
+.nav-manual {
     z-index: 1;
 }
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
     margin-right: 10px;
 }
-.nav-manual .manual-btn:hover{
+
+.nav-manual .manual-btn:hover {
     background-color: white;
 }
-#radio1:checked ~ .nav-auto .auto-btn1{
+
+#radio1:checked~.nav-auto .auto-btn1 {
     background-color: white;
 }
-#radio2:checked ~ .nav-auto .auto-btn2{
+
+#radio2:checked~.nav-auto .auto-btn2 {
     background-color: white;
 }
-#radio3:checked ~ .nav-auto .auto-btn3{
+
+#radio3:checked~.nav-auto .auto-btn3 {
     background-color: white;
 }
-#radio1:checked ~ .primeiro{
+
+#radio1:checked~.primeiro {
     margin-left: 0%;
 }
-#radio2:checked ~ .primeiro{
+
+#radio2:checked~.primeiro {
     margin-left: -25%;
 }
-#radio3:checked ~ .primeiro{
+
+#radio3:checked~.primeiro {
     margin-left: -50%;
 }
+
 @media screen and (max-width: 1000px) {
-    .img-desktop{
+    .img-desktop {
         display: none;
     }
-    .img-mobile{
+
+    .img-mobile {
         display: block;
     }
-    .nav-auto, .nav-manual{
+
+    .nav-auto,
+    .nav-manual {
         margin-top: 60%;
     }
 }
