@@ -40,7 +40,7 @@ document.getElementById('calcularFrete').addEventListener('click', () => {
             div.innerHTML = `
         ${frete.company.name} - ${frete.name}<br>
         Preço: <strong>R$ ${frete.price}</strong><br>
-        Prazo: ${frete.delivery_time} dias úteis
+        Prazo: ${frete.delivery_time} dias úteis<br><br>
       `;
             resultadoDiv.appendChild(div);
         });
