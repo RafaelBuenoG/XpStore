@@ -21,6 +21,7 @@ const Nav = () => {
             height={100}
             />
         </Link>
+        
 
         <form className="flex items-center justify-center flex-1 space-x-3 text-sm md:max-w-xl" role="search">
             <input
