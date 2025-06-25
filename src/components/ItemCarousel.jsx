@@ -32,13 +32,13 @@ export default function ItemCarousel({ title, items }) {
       <>
         <button
           onClick={() => scroll('left')}
-          className="flex items-center justify-center absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
+          className="flex items-center justify-center absolute -left-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
           >
           <FontAwesomeIcon icon={faChevronLeft} className="text-2xl text-black"/>
         </button>
         <button
           onClick={() => scroll('right')}
-          className="flex items-center justify-center absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
+          className="flex items-center justify-center absolute -right-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
           >
           <FontAwesomeIcon icon={faChevronRight} className="text-2xl text-black"/>
         </button>
@@ -58,7 +58,7 @@ export default function ItemCarousel({ title, items }) {
           <Link
             key={idx}
             href={`/produto/${item.slug}`}
-            className="w-45 flex-shrink-0 bg-gray-900 rounded-xl shadow p-3 hover:shadow-md transition-shadow"
+            className="w-45 flex-shrink-0 bg-gray-900 rounded-xl shadow p-3 hover:scale-105 transition"
           >
             <div className="w-full h-32 relative rounded-lg overflow-hidden">
               <Image

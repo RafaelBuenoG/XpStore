@@ -3,88 +3,12 @@ import BottomNav from "@/components/BottomNav";
 import Slider from "@/components/Slider";
 import CategoryCarousel from "@/components/CategoryCarousel";
 import ItemCarousel from "@/components/ItemCarousel";
+import { products } from "@/data/products";
+import { categories } from "@/data/categories";
 
-const categorias = [
-  {
-    name: 'Aventura',
-    icon: '',
-    slug: 'aventura',
-  },
-  {
-    name: 'RPG',
-    icon: '',
-    slug: 'rpg',
-  },
-  {
-    name: 'Corrida',
-    icon: '',
-    slug: 'corrida',
-  },
-  {
-    name: 'Esportes',
-    icon: '',
-    slug: 'esportes',
-  },
-  {
-    name: 'Tiro',
-    icon: '',
-    slug: 'tiro',
-  },
-];
-
-const destaques = [
-  {
-    name: 'Action Figure Kratos',
-    image: '/products/kratos.webp',
-    price: 99.99,
-    oldPrice: 249,
-    freeShipping: true,
-    slug: '',
-  },
-  {
-    name: 'FIFA 24',
-    image: '/products/fifa24.jpg',
-    price: 149,
-    oldPrice: 1000,
-    freeShipping: false,
-    slug: '',
-  },
-  {
-    name: 'Red Dead 2',
-    image: '/products/reddead.jpg',
-    price: 129,
-    oldPrice: false,
-    freeShipping: true,
-    slug: '',
-  },
-];
-
-const promocoes = [
-  {
-    name: 'Action Figure Kratos',
-    image: '/products/kratos.webp',
-    price: 99.99,
-    oldPrice: 249,
-    freeShipping: true,
-    slug: '',
-  },
-  {
-    name: 'FIFA 24',
-    image: '/products/fifa24.jpg',
-    price: 149,
-    oldPrice: 1000,
-    freeShipping: false,
-    slug: '',
-  },
-  {
-    name: 'Red Dead 2',
-    image: '/products/reddead.jpg',
-    price: 129,
-    oldPrice: false,
-    freeShipping: true,
-    slug: '',
-  },
-];
+const categoria = categories
+const destaque = products.filter(p => p.destaque);
+const promocao = products.filter(p => p.promocao);
 
 export default function Home() {
   return (
@@ -92,9 +16,9 @@ export default function Home() {
       <Nav />  
       <Slider />
       <main className="pb-16 px-6 md:px-12">
-        <CategoryCarousel title={"Categorias"} categories={categorias} />
-        <ItemCarousel title={"Destaques da Semana"} items={destaques} />
-        <ItemCarousel title={"Promoçôes"} items={promocoes} />
+        <CategoryCarousel title={"Categorias"} categories={categoria} />
+        <ItemCarousel title={"Destaques da Semana"} items={destaque} />
+        <ItemCarousel title={"Promoções"} items={promocao} />
       </main>
       <BottomNav />
     </>

@@ -25,19 +25,19 @@ export default function CategoryCarousel({ title, categories }) {
   };
 
   return (
-    <section className="relative w-full md:px-4 py-2">
+    <section className="relative w-full md:px-10 py-2">
       <h2 className="text-2xl mt-4 md:mt-8 md:text-3xl">{title}</h2>
       {!isMobile && (
         <>
           <button
             onClick={() => scroll('left')}
-            className="flex items-center justify-center absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
+            className="flex items-center justify-center absolute -left-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
             >
             <FontAwesomeIcon icon={faChevronLeft} className="text-2xl text-black"/>
           </button>
           <button
             onClick={() => scroll('right')}
-            className="flex items-center justify-center absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
+            className="flex items-center justify-center absolute -right-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
             >
             <FontAwesomeIcon icon={faChevronRight} className="text-2xl text-black"/>
           </button>
@@ -49,14 +49,14 @@ export default function CategoryCarousel({ title, categories }) {
         className={`
           flex gap-4 scroll-smooth
           ${isMobile ? 'overflow-x-auto' : 'overflow-x-hidden'}
-          md:px-8 py-2
+          md:px-2 py-2
         `}
       >
         {categories.map((cat, idx) => (
           <Link
             key={idx}
             href={`/categoria/${cat.slug}`}
-            className="flex flex-col items-center justify-center w-24 flex-shrink-0 text-center group"
+            className="flex flex-col items-center justify-center w-24 flex-shrink-0 text-center group hover:scale-105 transition"
           >
             <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-100 transition">
               <Image
