@@ -124,8 +124,8 @@ export default function DraggableAutoSlider() {
               setCurrent(current === 0 ? images.length - 1 : current - 1);
               startAutoSlide();
             }}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/40 text-white w-15 h-15 cursor-pointer rounded-full z-10">
-            <FontAwesomeIcon icon={faChevronLeft} className="text-4xl"/>
+            className="flex items-center justify-center absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/40 text-white w-12 h-12 cursor-pointer rounded-full z-10">
+            <FontAwesomeIcon icon={faChevronLeft} className="text-2xl"/>
           </button>
           <button
             onClick={() => {
@@ -133,8 +133,8 @@ export default function DraggableAutoSlider() {
               setCurrent((current + 1) % images.length);
               startAutoSlide();
             }}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/40 text-white w-15 h-15 cursor-pointer rounded-full z-10">
-            <FontAwesomeIcon icon={faChevronRight} className="text-4xl"/>
+            className="flex items-center justify-center absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/40 text-white w-12 h-12 cursor-pointer rounded-full z-10">
+            <FontAwesomeIcon icon={faChevronRight} className="text-2xl"/>
           </button>
         </>
       )}
