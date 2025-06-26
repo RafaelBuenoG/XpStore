@@ -25,7 +25,7 @@ export default function ItemCarousel({ title, items }) {
   };
 
   return (
-    <section className="relative w-full py-1 md:py-6 md:px-10">
+    <section className="relative w-full py-1 md:px-10">
       <h2 className="text-2xl mt-4 md:mt-8 md:text-3xl">{title}</h2>
       {/* Setas no desktop */}
       {!isMobile && (
