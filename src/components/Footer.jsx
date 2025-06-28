@@ -1,4 +1,4 @@
-import { faFacebookF, faInstagram, faTwitter, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faInstagram, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React from 'react'
@@ -19,6 +19,14 @@ const Footer = () => {
             </Link>
             <Link href="https://www.youtube.com" target='_blank'>
                 <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
+            </Link>
+        </div>
+        <div className="flex gap-10 text-xl text-red-400 underline">
+            <Link href="/sobre">
+                <p>Sobre Nós</p>
+            </Link>
+            <Link href="/faq">
+                <p>Faq</p>
             </Link>
         </div>
     </footer>

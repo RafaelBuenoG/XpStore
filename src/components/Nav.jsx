@@ -12,7 +12,7 @@ const Nav = () => {
 
   return (
     <nav className="flex flex-wrap items-center justify-evenly gap-4 md:gap-8 p-3 bg-gray-800">
-        <Link href="#">
+        <Link href="/">
             <Image
             className="w-20 md:w-28 h-auto"
             src="/logo.png"
@@ -51,7 +51,7 @@ const Nav = () => {
                 <span>Menu</span>
             </Link>
             </div>
-            <Link href="#" className="flex items-center p-3 gap-2 hover:scale-110 duration-200 bg-white rounded-full text-black">
+            <Link href="/criarconta" className="flex items-center p-3 gap-2 hover:bg-red-400 transition-colors bg-white rounded-full text-black">
                 <FontAwesomeIcon icon={faUserAlt} className="text-xl"/>
                 Criar Conta
             </Link>

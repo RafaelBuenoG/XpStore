@@ -92,7 +92,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-zinc-900 text-white py-6 mt-6">
+    // <section className="bg-zinc-900 text-white py-6 mt-6">
+    <section className="text-white py-6 mt-6">
       <h2 className="text-2xl text-center md:text-3xl">Perguntas Frequentes</h2>
       <div className="max-w-4xl mx-auto px-4 space-y-4">
         {faqs.map(({ id, icon, question, answer }) => {
