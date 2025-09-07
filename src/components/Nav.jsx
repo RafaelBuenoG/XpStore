@@ -38,7 +38,7 @@ const Nav = () => {
 
         <div className="hidden md:flex items-center space-x-10 text-white text-sm">
             <div className="flex space-x-5 items-center">
-            <Link href="#" className="flex flex-col items-center duration-200 hover:text-red-400">
+            <Link href="/xppoints" className="flex flex-col items-center duration-200 hover:text-red-400">
                 <FontAwesomeIcon icon={faChartSimple} className="text-xl"/>
                 <span>Meu XP</span>
             </Link>
