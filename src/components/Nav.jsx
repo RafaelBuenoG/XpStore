@@ -7,11 +7,11 @@ import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 
-const Nav = () => {
+const Nav = ({ className = "" }) => {
     const [search, setSearch] = useState('');
 
   return (
-    <nav className="flex flex-wrap items-center justify-evenly gap-4 md:gap-8 p-3 bg-gray-800">
+    <nav className={`flex flex-wrap items-center justify-evenly gap-4 md:gap-8 p-3 bg-gray-800 ${className}`}>
         <Link href="/">
             <Image
             className="w-20 md:w-28 h-auto"
