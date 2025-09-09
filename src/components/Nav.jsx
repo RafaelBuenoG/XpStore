@@ -46,9 +46,9 @@ const Nav = ({ className = "" }) => {
                 <FontAwesomeIcon icon={faCartShopping} className="text-xl"/>
                 <span>Carrinho</span>
             </Link>
-            <Link href="#" className="flex flex-col items-center duration-200 hover:text-red-400">
+            <Link href="/exponencial" className="flex flex-col items-center duration-200 hover:text-red-400">
                 <FontAwesomeIcon icon={faBars} className="text-xl"/>
-                <span>Menu</span>
+                <span>Gráficos</span>
             </Link>
             </div>
             <Link href="/criarconta" className="flex items-center p-3 gap-2 hover:bg-red-400 transition-colors bg-white rounded-full text-black">
