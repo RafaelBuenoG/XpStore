@@ -9,28 +9,10 @@ import Footer from '@/components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping, faCartPlus, faCreditCard, faStar, faStarHalfAlt, faTruck } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
+import CalculadorFrete from "@/components/CalculadorFrete";
+
 
 const ProdutoPage = () => {
-  const [cep, setCep] = useState("");
-  const [frete, setFrete] = useState(null);
-  const [erroCep, setErroCep] = useState("");
-
-  const calcularFrete = () => {
-    const cepNumeros = cep.replace(/\D/g, "")
-    if (cepNumeros.length !== 8) {
-      setErroCep("Digite um CEP válido (8 números).");
-      setFrete(null);
-      return;
-    }
-    setErroCep("");
-    const randomFrete = Math.floor(Math.random() * (50 - 15 + 1)) + 15; // R$15 a R$50
-    const randomPrazo = Math.floor(Math.random() * (10 - 3 + 1)) + 3;   // 3 a 10 dias
-
-    setFrete({
-      valor: `R$ ${randomFrete},90`,
-      prazo: `${randomPrazo} dias úteis`,
-    });
-  };
 
   return (
     <>
@@ -56,6 +38,7 @@ const ProdutoPage = () => {
               />
             </div>
           </div>
+
 
           <div className="md:w-1/2 md:justify-center flex flex-col justify-start space-y-5">
             <div className="flex items-baseline space-x-1">
@@ -91,39 +74,8 @@ const ProdutoPage = () => {
                 Comprar
               </button>
             </div>
-
-            <div className="flex flex-col gap-3 mt-5 p-5 rounded-2xl bg-gray-800">
-              <h2>Calcular Frete</h2>
-              <div className="flex gap-2">
-                <input
-                  className="w-full px-2 py-1 rounded-md"
-                  type="text"
-                  placeholder="00000-000"
-                  value={cep}
-                  onChange={(e) => {
-                    setCep(e.target.value);
-                    setFrete(null);
-                    setErroCep("");
-                  }}
-                />
-                <button
-                  onClick={calcularFrete}
-                  className="py-2 px-5 text-base rounded-2xl bg-red-400 cursor-pointer hover:bg-red-500 duration-200"
-                >
-                  Calcular
-                </button>
-              </div>
-              {erroCep && (
-                <p className="text-red-500 text-sm">{erroCep}</p>
-              )}
-              {frete && (
-                <div className="mt-3 text-sm">
-                  <p>Valor do Frete: <strong>{frete.valor}</strong></p>
-                  <p>Prazo de entrega: <strong>{frete.prazo}</strong></p>
-                </div>
-              )}
-            </div>
-          </div>
+            <CalculadorFrete />
+        </div>
         </section>
 
         {/* Descrição */}
