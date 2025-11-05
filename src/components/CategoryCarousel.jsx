@@ -33,13 +33,13 @@ export default function CategoryCarousel({ title, categories }) {
             onClick={() => scroll('left')}
             className="flex items-center justify-center absolute -left-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
             >
-            <FontAwesomeIcon icon={faChevronLeft} className="text-2xl text-black"/>
+            <FontAwesomeIcon icon={faChevronLeft} className="text-2xl"/>
           </button>
           <button
             onClick={() => scroll('right')}
             className="flex items-center justify-center absolute -right-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
             >
-            <FontAwesomeIcon icon={faChevronRight} className="text-2xl text-black"/>
+            <FontAwesomeIcon icon={faChevronRight} className="text-2xl"/>
           </button>
         </>
       )}
@@ -67,7 +67,7 @@ export default function CategoryCarousel({ title, categories }) {
                 className="object-cover"
               />
             </div>
-            <span className="text-sm mt-2 font-medium text-white">
+            <span className="text-sm mt-2 font-medium">
               {cat.name}
             </span>
           </Link>

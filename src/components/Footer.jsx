@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center mb-14 md:mb-0 py-3 md:py-5 bg-gray-900 space-y-4">
+    <footer className="flex flex-col items-center justify-center mb-14 md:mb-0 py-3 md:py-5 bg-white dark:bg-gray-900 space-y-4">
         <p>&copy; 2025 Xp Games - Todos os direitos reservados</p>
         <div className="space-x-4 text-2xl">
             <Link href="https://www.facebook.com" target='_blank'>

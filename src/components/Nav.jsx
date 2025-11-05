@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faCartShopping, faChartSimple, faMagnifyingGlass, faUserAlt } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import ThemeToggle from './ThemeToggle';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
@@ -11,7 +12,7 @@ const Nav = ({ className = "" }) => {
     const [search, setSearch] = useState('');
 
   return (
-    <nav className={`flex flex-wrap items-center justify-evenly gap-4 md:gap-8 p-3 bg-gray-800 ${className}`}>
+    <nav className={`flex flex-wrap items-center justify-evenly gap-4 md:gap-8 p-3 bg-gray-100 dark:bg-gray-800 ${className}`}>
         <Link href="/">
             <Image
             className="w-20 md:w-28 h-auto"
@@ -25,7 +26,7 @@ const Nav = ({ className = "" }) => {
 
         <form className="flex items-center justify-center flex-1 space-x-3 text-sm md:max-w-xl" role="search">
             <input
-                className="p-2 md:p-3 rounded-full bg-gray-700 w-full"
+                className="p-2 md:p-3 rounded-full bg-white dark:bg-gray-700 w-full"
                 type="text"
                 placeholder="O que você procura?"
                 value={search}
@@ -36,7 +37,7 @@ const Nav = ({ className = "" }) => {
             </button>
         </form>
 
-        <div className="hidden md:flex items-center space-x-10 text-white text-sm">
+        <div className="hidden md:flex items-center space-x-10 text-black dark:text-white text-sm">
             <div className="flex space-x-5 items-center">
             <Link href="/xppoints" className="flex flex-col items-center duration-200 hover:text-red-400">
                 <FontAwesomeIcon icon={faChartSimple} className="text-xl"/>
@@ -56,6 +57,7 @@ const Nav = ({ className = "" }) => {
                 Criar Conta
             </Link>
         </div>
+        <ThemeToggle />
     </nav>
   )
 }

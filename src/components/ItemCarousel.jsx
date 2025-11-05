@@ -34,13 +34,13 @@ export default function ItemCarousel({ title, items }) {
           onClick={() => scroll('left')}
           className="flex items-center justify-center absolute -left-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
           >
-          <FontAwesomeIcon icon={faChevronLeft} className="text-2xl text-black"/>
+          <FontAwesomeIcon icon={faChevronLeft} className="text-2xl"/>
         </button>
         <button
           onClick={() => scroll('right')}
           className="flex items-center justify-center absolute -right-6 top-[60%] -translate-y-1/2 z-10 bg-white/60 w-12 h-12 rounded-full hover:bg-gray-100 cursor-pointer duration-200"
           >
-          <FontAwesomeIcon icon={faChevronRight} className="text-2xl text-black"/>
+          <FontAwesomeIcon icon={faChevronRight} className="text-2xl"/>
         </button>
       </>
       )}
@@ -58,7 +58,7 @@ export default function ItemCarousel({ title, items }) {
           <Link
             key={idx}
             href={`/produto/${item.slug}`}
-            className="w-45 flex-shrink-0 bg-gray-900 rounded-xl shadow p-3 hover:scale-105 transition"
+            className="w-45 flex-shrink-0 bg-white dark:bg-gray-900 rounded-xl shadow p-3 hover:scale-105 transition"
           >
             <div className="w-full h-32 relative rounded-lg overflow-hidden">
               <Image
@@ -74,7 +74,7 @@ export default function ItemCarousel({ title, items }) {
               <h3 className="text-sm font-medium line-clamp-2">{item.name}</h3>
 
               {item.oldPrice && (
-                <div className="text-xs text-gray-500 line-through mt-4">
+                <div className="text-xs line-through mt-4">
                   {item.oldPrice.toLocaleString('pt-BR', {
                     style: 'currency',
                     currency: 'BRL',
@@ -83,7 +83,7 @@ export default function ItemCarousel({ title, items }) {
               )}
 
               <div className="flex items-center gap-2 mt-1">
-                <span className="text-base font-semibold text-white">
+                <span className="text-base font-semibold">
                   {item.price.toLocaleString('pt-BR', {
                     style: 'currency',
                     currency: 'BRL',
@@ -97,7 +97,7 @@ export default function ItemCarousel({ title, items }) {
               </div>
 
               {item.freeShipping && (
-                <div className="text-[10px] text-white bg-green-500 w-fit px-2 py-[2px] rounded my-2">
+                <div className="text-[10px] bg-green-500 w-fit px-2 py-[2px] rounded my-2">
                   Frete grátis
                 </div>
               )}
