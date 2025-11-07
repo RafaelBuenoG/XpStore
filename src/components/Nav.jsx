@@ -12,7 +12,7 @@ const Nav = ({ className = "" }) => {
     const [search, setSearch] = useState('');
 
   return (
-    <nav className={`flex flex-wrap items-center justify-evenly gap-4 md:gap-8 p-3 bg-gray-100 dark:bg-gray-800 ${className}`}>
+    <nav className={`flex flex-wrap items-center justify-evenly gap-4 md:gap-8 p-3 bg-gradient-to-r from-sky-900 to-cyan-600 ${className}`}>
         <Link href="/">
             <Image
             className="w-20 md:w-28 h-auto"
@@ -26,33 +26,33 @@ const Nav = ({ className = "" }) => {
 
         <form className="flex items-center justify-center flex-1 space-x-3 text-sm md:max-w-xl" role="search">
             <input
-                className="p-2 md:p-3 rounded-full bg-white dark:bg-gray-700 w-full"
+                className="p-2 md:p-3 rounded-full bg-white text-black w-full"
                 type="text"
                 placeholder="O que você procura?"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 />
-            <button className="bg-red-400 p-3 md:p-4 rounded-full flex items-center justify-center hover:bg-red-400/70 hover:scale-110 duration-200  cursor-pointer" type="submit">
+            <button className="bg-[#fffdd0] text-black p-3 md:p-4 rounded-full flex items-center justify-center hover:bg-[#faf9e0] hover:scale-110 duration-200  cursor-pointer" type="submit">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
         </form>
 
-        <div className="hidden md:flex items-center space-x-10 text-black dark:text-white text-sm">
+        <div className="hidden md:flex items-center space-x-10 text-white text-sm">
             <div className="flex space-x-5 items-center">
-            <Link href="/xppoints" className="flex flex-col items-center duration-200 hover:text-red-400">
+            <Link href="/xppoints" className="flex flex-col items-center duration-200 hover:text-[#fffdd0]">
                 <FontAwesomeIcon icon={faChartSimple} className="text-xl"/>
                 <span>Meu XP</span>
             </Link>
-            <Link href="#" className="flex flex-col items-center duration-200 hover:text-red-400" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasShopCar">
+            <Link href="#" className="flex flex-col items-center duration-200 hover:text-[#fffdd0]" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasShopCar">
                 <FontAwesomeIcon icon={faCartShopping} className="text-xl"/>
                 <span>Carrinho</span>
             </Link>
-            <Link href="/exponencial" className="flex flex-col items-center duration-200 hover:text-red-400">
+            <Link href="/exponencial" className="flex flex-col items-center duration-200 hover:text-[#fffdd0]">
                 <FontAwesomeIcon icon={faBars} className="text-xl"/>
                 <span>Gráficos</span>
             </Link>
             </div>
-            <Link href="/criarconta" className="flex items-center p-3 gap-2 hover:bg-red-400 transition-colors bg-white rounded-full text-black">
+            <Link href="/criarconta" className="flex items-center p-3 gap-2 hover:bg-[#fffdd0] transition-colors bg-white rounded-full text-black">
                 <FontAwesomeIcon icon={faUserAlt} className="text-xl"/>
                 Criar Conta
             </Link>

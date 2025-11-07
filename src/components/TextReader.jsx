@@ -1,4 +1,6 @@
 "use client";
+import { faHeadSideSpeak } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function TextReader() {
     function readSelectedText() {
@@ -22,10 +24,10 @@ export default function TextReader() {
                 right: "20px",
                 zIndex: 9999,
                 padding: "12px 18px",
-                background: "#4CAF50",
+                background: "#0092B8",
                 color: "#fff",
-                borderRadius: "8px",
-                border: "none",
+                borderRadius: "20px",
+                border: "2px solid white",
                 cursor: "pointer",
             }}
         >

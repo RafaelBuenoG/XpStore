@@ -61,9 +61,9 @@ const ProdutoPage = () => {
                 defaultValue={1}
                 min={1}
                 max={99}
-                className="bg-gray-800 w-24 h-12 p-2 rounded-2xl text-center"
+                className="bg-[#a9b4c0] dark:bg-[#24292E] w-24 h-12 p-2 rounded-2xl text-center"
               />
-              <button className="bg-gray-800 flex-1 h-12 p-2 rounded-2xl text-lg flex items-center justify-center cursor-pointer hover:bg-gray-700 duration-200">
+              <button className="bg-[#a9b4c0] dark:bg-[#24292E] flex-1 h-12 p-2 rounded-2xl text-lg flex items-center justify-center cursor-pointer hover:bg-gray-700 duration-200">
                 <FontAwesomeIcon icon={faCartPlus} className="mr-2" />
                 Carrinho
               </button>

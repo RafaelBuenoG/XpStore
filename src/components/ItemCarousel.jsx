@@ -58,7 +58,7 @@ export default function ItemCarousel({ title, items }) {
           <Link
             key={idx}
             href={`/produto/${item.slug}`}
-            className="w-45 flex-shrink-0 bg-white dark:bg-gray-900 rounded-xl shadow p-3 hover:scale-105 transition"
+            className="w-45 flex-shrink-0 bg-[#a9b4c0] dark:bg-[#24292E] rounded-xl shadow p-3 hover:scale-105 transition"
           >
             <div className="w-full h-32 relative rounded-lg overflow-hidden">
               <Image
